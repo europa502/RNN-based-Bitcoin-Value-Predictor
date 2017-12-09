@@ -112,4 +112,4 @@ regressor.fit(xtrain,ytrain,batch_size=32,epochs=2000)                      #fit
 
 ## Reference- 
 
-[kimanalytics](https://github.com/kimanalytics/Recurrent-Neural-Network-to-Predict-Stock-Prices)
+[kimanalytics](https://github.com/kimanalytics/Recurrent-Neural-Network-to-Predict-Stock-Prices) - Recurrent Neural Network to Predict Tesla's Stock Prices
