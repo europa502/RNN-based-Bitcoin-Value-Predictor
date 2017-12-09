@@ -1,5 +1,4 @@
-# Bitcoin-Value-Predictor---RNN
-
+# RNN-based-Bitcoin-Value-Predictor 
 ## Introduction
 
 Recurrent Neural Networks are excellent to use along with time series analysis to predict stock prices. What is time series analysis? Time series analysis comprises methods for analyzing time series data in order to extract meaningful statistics and other characteristics of the data. Time series forecasting is the use of a model to predict future values based on previously observed values.
@@ -103,7 +102,8 @@ plt.show()
 ```
 
 ## Results 
-![screenshot from 2017-12-09 05-40-01](https://user-images.githubusercuent.com/26405791/33792889-038ef4be-dca4-11e7-8742-7ed5edf15481.png)
+![screenshot from 2017-12-09 05-40-01](https://user-images.githubusercontent.com/26405791/33792957-186dc214-dca6-11e7-9b11-2ffcc70027a4.png)
+
 
 You can surely increase the accuracy up to a limit by increasing the epochs. 
 ```python 
