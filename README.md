@@ -89,7 +89,7 @@ inputs = np.reshape(inputs, (8, 1, 1))
 predicted_stock_price = regressor.predict(inputs)
 predicted_stock_price = sc.inverse_transform(predicted_stock_price)
 ```
-## visualising the result 
+## Visualising the result 
 ```python
 
 plt.plot(real_stock_price, color = 'red', label = 'Real BTC Value')
