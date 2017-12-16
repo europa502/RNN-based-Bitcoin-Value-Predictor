@@ -15,6 +15,17 @@ Solution: Use recurrent neural networks to predict Bitcoin prices in the first w
 
 You can get up-to-date bitcoin prices in proper csv format from https://finance.yahoo.com/quote/BTC-USD/history?p=BTC-USD
 
+## Prerequisits
+
+* Python 3.x.x
+* Training datasets
+* Libraries-
+  * tensorflow
+  * keras
+  * matploitlib
+  * numpy
+  * pandas
+  
 ## Visualising The Data
 ```python
 #Importing preprocessing libraries
