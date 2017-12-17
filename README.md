@@ -54,8 +54,8 @@ training_set1 = sc.fit_transform(training_set1)
 xtrain=training_set1[0:2694]                  #input values of rows [0-2694]		   
 ytrain=training_set1[1:2695]                  #input values of rows [1-2695]
 
-today=pd.DataFrame(xtrain[0:5])               #taking first file elements of the row from xtrain
-tomorrow=pd.DataFrame(ytrain[0:5])            #taking first file elements of the row from ytrain
+today=pd.DataFrame(xtrain)               #assigning the values of xtrain to today
+tomorrow=pd.DataFrame(ytrain)            #assigning the values of xtrain to tomorrow
 ex= pd.concat([today,tomorrow],axis=1)        #concat two columns 
 ex.columns=(['today','tomorrow'])
 xtrain = np.reshape(xtrain, (2694, 1, 1))     #Reshaping into required shape for Keras
@@ -75,7 +75,7 @@ regressor=Sequential()                                                      #ini
 
 regressor.add(LSTM(units=4,activation='sigmoid',input_shape=(None,1)))      #adding input layerand the LSTM layer 
 
-regressor.add(Dense(units=1))                                               #ading output layers
+regressor.add(Dense(units=1))                                               #adding output layers
 
 regressor.compile(optimizer='adam',loss='mean_squared_error')               #compiling the RNN
 
